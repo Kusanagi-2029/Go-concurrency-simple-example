@@ -94,10 +94,12 @@ func main() {
 	}
 }
 ```
+
 ![Concurrency 5](https://user-images.githubusercontent.com/71845085/184555819-5b144dd3-6e39-4103-bf1a-a3f60eafd354.jpg)
 
 **Решение DEADLOCK'а по примеру 2:**
 Функция, которая выполняет запись в канал, после записи всех элементов должна ЗАКРЫТЬ этот канал.
+
 ![Concurrency 6](https://user-images.githubusercontent.com/71845085/184555884-de62787f-3a5d-4da1-9fd4-a84d58dc7600.jpg)
 
 <a name="buffered_channel"><h2>Буферизированные каналы</h2></a>
